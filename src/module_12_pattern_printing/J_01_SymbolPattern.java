@@ -1,5 +1,7 @@
 package module_12_pattern_printing;
 
+import java.util.Scanner;
+
 public class J_01_SymbolPattern {
     public static void main(String[] args) {
 //        rectanglePattern(4);
@@ -8,7 +10,100 @@ public class J_01_SymbolPattern {
 //        reverseStarRightTriPattern(4);
 //        rightSideStartingTriPattern(5);;
 //        reverseRightSideStartingTriPattern(5);
-        midTriPattern(5);
+//        midTriPattern(5);
+//       rhombus(4);
+//        oddStarPyramidM1(4);
+//       oddStarPyramidM2(4);
+//        starBridgePattern(4);
+        starDiamond(5);
+    }
+
+    // starDiamond()
+    public static void starDiamond(int n) {
+        int nst = 1;
+        int nsp = n - 1;
+        for (int i = 0; i <n ; i++) {
+            for (int j = 0; j < n - i-1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < n-1; i++) {
+            for (int j = 0; j <= i ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < n - i - 1 ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    //    starBridgePattern()
+    public static void starBridgePattern(int n) {
+        for (int i = 1; i <= 2 * n - 1; i++) {
+            System.out.print("* ");
+        }
+        System.out.println();
+        for (int i = 1; i <= n - 1; i++) {
+            for (int j = n - i; j >= 1; j--) {
+                System.out.print("* ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("  ");
+            }
+            for (int j = n - i; j >= 1; j--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+    }
+
+    // oddStarPyramid() M-2 using extra varible
+    public static void oddStarPyramidM2(int n) {
+        int nsp = n - 1;
+        int nst = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+            nsp--;
+            nst += 2;
+        }
+    }
+
+    // oddStarPyramid() M-1
+    public static void oddStarPyramidM1(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    // rhombus()
+    public static void rhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("  ");
+            }
+            for (int j = 1; j <= n; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 
     // midTriPattern-1
