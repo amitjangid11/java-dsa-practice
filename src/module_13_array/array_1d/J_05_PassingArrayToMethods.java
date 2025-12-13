@@ -15,7 +15,7 @@
  *   After change: 10
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 public class J_05_PassingArrayToMethods {
     public static void main(String[] args) {

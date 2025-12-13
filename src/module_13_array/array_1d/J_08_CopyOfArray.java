@@ -23,7 +23,7 @@
  *     arr[0] after modifying brr[0] = 1
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 import java.util.Arrays;
 

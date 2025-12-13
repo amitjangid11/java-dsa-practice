@@ -21,7 +21,7 @@
  *   66
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 public class J_10_AnonymousArray {
 

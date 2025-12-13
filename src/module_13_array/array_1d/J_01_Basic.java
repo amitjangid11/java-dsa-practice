@@ -14,7 +14,7 @@
  *   After Updation:  100 200 300 400 500
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 public class J_01_Basic {
     public static void main(String[] args) {

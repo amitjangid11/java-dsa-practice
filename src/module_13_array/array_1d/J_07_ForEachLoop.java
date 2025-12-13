@@ -28,7 +28,7 @@
  *   Printing with for-each: 5 5 6 7 12 34
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 import java.util.Arrays;
 

@@ -21,7 +21,7 @@
  *   Marks of Subject 3 is : 70
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 import java.util.Scanner;
 

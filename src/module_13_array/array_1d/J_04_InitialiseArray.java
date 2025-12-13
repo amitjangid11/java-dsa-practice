@@ -16,7 +16,7 @@
  *   Using Arrays.toString: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 import java.util.Arrays;
 

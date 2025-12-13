@@ -14,7 +14,7 @@
  *   Sorted Array:   10 23 30 34 40 89
  */
 
-package module_13_array;
+package module_13_array.array_1d;
 
 import java.util.Arrays;
 
