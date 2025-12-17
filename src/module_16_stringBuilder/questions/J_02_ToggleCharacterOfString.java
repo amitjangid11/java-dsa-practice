@@ -1,0 +1,25 @@
+package module_16_stringBuilder.questions;
+
+import java.util.Scanner;
+
+public class J_02_ToggleCharacterOfString {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder(sc.nextLine());
+        int n = sb.length();
+
+        for (int i = 0; i < n; i++) {
+            char ch = sb.charAt(i);
+            int ascii = (int)ch;
+            if (ascii >=65 && ascii <=90){ //for capital
+                ascii += 32;
+            } else if (ascii >=97 && ascii <=122) { //for small
+                ascii -= 32;
+            }
+            ch = (char)ascii;
+            sb.setCharAt(i,ch);
+        }
+        System.out.println(sb);
+    }
+}
